@@ -1,12 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>책사랑 공간</title>
-  </head>
-  <body>
-    <h1>책사랑 공간 | Book lover's Haven</h1>
-  </body>
-</html>
+{% extends 'base.html' %} {% block content %}
+<h1>About Page</h1>
+<hr />
+<article>
+  <div class="getting-started">
+    <h2 class="section-title">How to get started</h2>
+    <p>
+      Are you perhaps an author? Feel free to create your stories in the stories
+      page!
+    </p>
+  </div>
+
+  <div class="filler">
+    <p>We’re a digital sanctuary for those who cherish the written word.</p>
+    <p>
+      We offer a cozy, welcoming space for authors to write and hopefully share
+      their stories to others!
+    </p>
+    <p>
+      Book Lovers' Haven is the perfect place to nourish your love for books and
+      discover your next great story.
+    </p>
+  </div>
+
+  <div class="name-meaning">
+    <h3>Site name meaning</h3>
+    <h2>책사랑 공간</h2>
+    <p>It stands for</p>
+    <h2>Book Lover’s Haven</h2>
+  </div>
+</article>
+{% endblock %}
