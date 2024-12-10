@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'css/stories/stories-detail.css' %}" />
+{% endblock %} {% block content %}
+<article class="story-container">
+  <header class="story-header">
+    <h1>{{ story.name }}</h1>
+    <div class="story-actions">
+      <a href="{% url 'edit' story.id %}" class="btn btn-edit">Edit Story</a>
+      <a href="{% url 'delete' story.id %}" class="btn btn-delete"
+        >Delete Story</a
+      >
+    </div>
+  </header>
+  <div class="story-content">
+    <div class="story-description">
+      <h2>Story Description</h2>
+      <p>{{ story.description }}</p>
+    </div>
+    <div class="story-text">
+      <h2>Your Story</h2>
+      <p>{{ story.story }}</p>
+    </div>
+  </div>
+</article>
+{% endblock %}
