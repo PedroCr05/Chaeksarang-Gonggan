@@ -1,36 +1,56 @@
 {% extends 'base.html' %} {% block content %}
-<h1>About Page</h1>
-<article>
-  <div class="getting-started">
-    <h2 class="section-title">How to get started</h2>
-    <p>
-      Are you perhaps an author? Feel free to create your stories in the
-      <a href="">stories</a>
-      page!
-    </p>
+<link rel="stylesheet" href="../static/css/about.css" />
+
+<div class="content-wrapper">
+  <div class="center-container">
+    <h1 class="page-title">About Page</h1>
+    <article class="grid-container">
+      <div class="getting-started">
+        <h2 class="section-title">How to get started</h2>
+        <div class="content-box-first">
+          <div class="gray-background"></div>
+          <div class="image-container">
+            <img
+              src="https://media.istockphoto.com/id/1080259016/photo/writing-in-notebook-close-up.jpg?s=612x612&w=0&k=20&c=HWkTECvBXk9xyAFu3D-KbCgKPQ7HgRNKDsQhysWHd2c="
+              alt="Author writing"
+              class="background-image"
+            />
+            <p class="section-text-first">
+              Are you perhaps an author? Feel free to create your stories in the
+              <a href="/stories" class="link-to-stories">stories</a> page!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vertical-divider"></div>
+
+      <div class="filler">
+        <p class="section-paragraph">
+          We’re a digital sanctuary for those who cherish the written word.
+        </p>
+        <p class="section-paragraph">
+          We offer a cozy, welcoming space for authors to write and hopefully
+          share their stories to others!
+        </p>
+        <p class="section-paragraph">
+          책사랑 공간 (Book Lovers' Haven) is the perfect place to nourish your
+          love for books and discover your next great story.
+        </p>
+      </div>
+
+      <div class="vertical-divider"></div>
+
+      <div class="name-meaning">
+        <h2 class="section-title">Site Name Meaning</h2>
+        <div class="content-box-second">
+          <h2 class="highlight-text">책사랑 공간</h2>
+          <p class="section-text-second">It stands for</p>
+          <h2 class="highlight-text">Book Lover’s Haven</h2>
+        </div>
+      </div>
+    </article>
   </div>
+</div>
 
-  <hr />
-
-  <div class="filler">
-    <p>We’re a digital sanctuary for those who cherish the written word.</p>
-    <p>
-      We offer a cozy, welcoming space for authors to write and hopefully share
-      their stories to others!
-    </p>
-    <p>
-      책사랑 공간 (Book Lovers' Haven) is the perfect place to nourish your love
-      for books and discover your next great story.
-    </p>
-  </div>
-
-  <hr />
-
-  <div class="name-meaning">
-    <h3>Site Name Meaning</h3>
-    <h2>책사랑 공간</h2>
-    <p>It stands for</p>
-    <h2>Book Lover’s Haven</h2>
-  </div>
-</article>
 {% endblock %}

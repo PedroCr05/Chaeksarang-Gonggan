@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock %} {% block content %}
+
+<section class="logo-container">
+  <div class="home-title">
+    <h1>책사랑 공간</h1>
+    <h1>(Chaeksarang Gonggan)</h1>
+  </div>
+  <div class="header-logo-container">
+    <a href="/">
+      <img src="../static/images/book.png" alt="site-logo-of-a-book" />
+    </a>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #d9d9d9;
+}
+.content-wrapper {
+  padding-top: 2.5rem;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.center-container > * {
+  max-width: 100%;
+}
+
+.page-title {
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.getting-started,
+.filler,
+.name-meaning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.5em;
+  color: #d3d3d3;
+  background-color: rgba(168, 168, 168, 75);
+  border: #595959 solid 0.25rem;
+  text-shadow: 1rem 1rem 1rem #d3d3d3;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-paragraph-card {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.link-to-stories {
+  color: #76c7c0;
+  text-decoration: none;
+}
+
+.link-to-stories:hover {
+  text-decoration: underline;
+}
+
+.highlight-text {
+  font-size: 1.3em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.vertical-divider {
+  width: 0.125rem;
+  background-color: #555;
+  height: 100%;
+  align-self: stretch;
+}
+
+.gray-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(140, 137, 137, 50);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.image-container {
+  position: relative;
+  width: 98%;
+  height: 98%;
+  max-width: 600px;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  z-index: 2;
+  transform: translate(4px, -15.25rem);
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.section-text-first {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 2.75rem);
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 3;
+  padding: 1rem 0 1rem 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
