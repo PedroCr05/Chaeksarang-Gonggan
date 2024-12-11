@@ -1,32 +1,78 @@
-.card-container {
-  padding: 0 30px;
+.page-header {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(168, 168, 168, 75);
+  border: 1px solid #595959;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.page-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.add-story-btn {
+  background-color: rgba(57, 57, 57, 75);
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #97ff7d;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  background-color: #d9d9d9;
+  margin: 20px auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .card {
-  width: 275px;
-  margin: 10px;
+  position: relative;
+  background-color: rgba(168, 168, 168, 75);
+  border: 1px solid #595959;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
-.card-content {
-  padding: 10px;
+.card-img-container {
   width: 100%;
+  height: 150px;
+  overflow: hidden;
 }
 
-.usr-img {
+.card-img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.card > a {
-  text-decoration: none;
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
 }
 
-.card h2 {
-  margin: 10px 0;
-}
-
-.card p {
-  margin: 5px 0;
+.card-title {
+  margin: 0;
+  font-size: 16px;
 }
