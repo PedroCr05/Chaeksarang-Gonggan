@@ -1,26 +1,30 @@
+body {
+  color: #d9d9d9;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(168, 168, 168, 75);
-  border: 1px solid #595959;
-  padding: 10px 20px;
-  border-radius: 8px;
-  margin: 20px auto;
-  max-width: 800px;
+  border: 0.4rem solid #595959;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2.5rem;
+  margin: 1.2rem auto;
+  max-width: 50rem;
 }
 
 .page-header h1 {
-  font-size: 24px;
+  font-size: 3.25rem;
   margin: 0;
 }
 
 .add-story-btn {
   background-color: rgba(57, 57, 57, 75);
   text-decoration: none;
-  padding: 8px 16px;
-  border: 1px solid #97ff7d;
-  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  border: 0.4rem solid #97ff7d;
+  border-radius: 2.5rem;
   font-weight: bold;
   font-size: 14px;
 }
