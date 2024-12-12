@@ -1,6 +1,7 @@
+from .models import Story
+from django.contrib.auth.views import LoginView
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .models import Story
 
 def home(request):
     return render(request, 'home.html')
@@ -28,3 +29,6 @@ class StoryUpdate(UpdateView):
 class StoryDelete(DeleteView):
     model = Story
     success_url = '/stories/'
+
+class Home(LoginView):
+    template_name = 'home.html'

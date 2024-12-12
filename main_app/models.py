@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 TAGS = (
     ('A', 'Adventure'),
@@ -26,6 +27,7 @@ TAGS = (
 
 
 class Story(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=150)
     story = models.TextField()
