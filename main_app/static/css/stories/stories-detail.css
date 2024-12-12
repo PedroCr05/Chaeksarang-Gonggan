@@ -11,23 +11,6 @@ body {
   font-size: 2.3rem;
 }
 
-.story-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #9a9a9a;
-  border: 0.4rem solid #666;
-  padding: 0.8rem;
-  border-radius: 2rem;
-  margin-bottom: 20px;
-}
-
-.story-header h1 {
-  font-size: 3rem;
-  margin: 0;
-  text-align: center;
-}
-
 .story-actions {
   display: flex;
   justify-content: center;
@@ -43,14 +26,21 @@ body {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.story-actions .btn-edit {
-  background-color: #ffb37d98;
-  border: 0.3rem solid #ffb37d;
-}
-
 .story-actions .btn-delete {
   background-color: #f500009d;
   border: 0.3rem solid #f50000;
+}
+
+.story-actions .btn-delete:hover {
+  background-color: #f50000;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #333;
+}
+
+.story-actions .btn-edit {
+  background-color: #ffb37d98;
+  border: 0.3rem solid #ffb37d;
 }
 
 .story-actions .btn-edit:hover {
@@ -58,13 +48,7 @@ body {
   color: #333;
   transform: scale(1.1);
   cursor: pointer;
-}
-
-.story-actions .btn-delete:hover {
-  background-color: #f50000;
-  color: #fff;
-  transform: scale(1.1);
-  cursor: pointer;
+  color: #333;
 }
 
 .story-container {
@@ -98,4 +82,24 @@ body {
   font-size: 1.125rem;
   line-height: 1.6;
   color: black;
+}
+
+.story-header {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9a9a9a;
+  border: 0.4rem solid #666;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.story-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
 }

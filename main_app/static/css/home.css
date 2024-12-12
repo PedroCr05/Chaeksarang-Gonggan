@@ -6,13 +6,85 @@
 .home-title {
   background-color: rgba(168, 168, 168, 75%);
   border-radius: 0.9rem;
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: #d9d9d9;
   padding: 0 0.4rem 0 0.4rem;
-  box-shadow: 0 0.5rem 0 0.5rem rgba(89, 89, 89, 75%);
+  box-shadow: 0 0 0 0.5rem rgba(89, 89, 89, 75%);
+}
+
+.not-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+form.login {
+  background-color: rgba(154, 154, 154, 0.8);
+  border: 0.4rem solid #595959;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+form h1 {
+  font-size: 2.4rem;
+  color: #d9d9d9;
+  margin-bottom: 2rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #595959;
+  background-color: #d9d9d9;
+  color: #000;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #777777;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn.submit {
+  display: inline-block;
+  font-family: inherit;
+  padding: 0.6rem 1.5rem;
+  background-color: #9c9c9c8e;
+  border: 0.4rem solid #636363;
+  border-radius: 1.5rem;
+  color: #d9d9d9;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.submit:hover {
+  background-color: #636363;
+  transform: scale(1.1);
+  color: #333;
 }
 
 .logo-container .header-logo-container img {
-  width: 25rem;
+  width: 32rem;
   height: auto;
 }

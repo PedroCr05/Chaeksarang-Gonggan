@@ -1,0 +1,87 @@
+body {
+  color: #d9d9d9;
+}
+
+.page-header {
+  text-align: center;
+  background-color: #9a9a9a;
+  color: #d9d9d9;
+  border: 0.4rem solid #666;
+  border-radius: 1.5rem;
+  font-size: 2.1rem;
+  padding: 0 2.4rem 0 2.4rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  background-color: #888888;
+  border: 0.3rem solid #595959;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h2 span {
+  font-weight: bold;
+}
+
+.bold-me,
+.red-title {
+  color: red;
+  font-size: 2rem;
+}
+
+.bold-me {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background-color: #97ff7da6;
+  border: 0.3rem solid #97ff7d;
+  color: #d9d9d9;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.btn.secondary:hover {
+  background-color: #97ff7d;
+  transform: scale(1.1);
+  color: #333;
+  cursor: pointer;
+}
+
+.btn.danger {
+  background-color: #f500009d;
+  border: 0.3rem solid #f50000;
+  color: #d9d9d9;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.btn.danger:hover {
+  background-color: #f50000;
+  transform: scale(1.1);
+  color: #333;
+  cursor: pointer;
+}

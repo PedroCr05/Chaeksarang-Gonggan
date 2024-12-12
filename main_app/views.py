@@ -26,7 +26,8 @@ def story_details(request, story_id):
 
 class StoryCreate(LoginRequiredMixin, CreateView):
     model = Story
-    fields = '__all__'
+    fields = ['name', 'description', 'story', 'photo']
+
     def form_valid(self, form):
         form.instance.user = self.request.user 
         return super().form_valid(form)
@@ -35,7 +36,7 @@ class StoryCreate(LoginRequiredMixin, CreateView):
 
 class StoryUpdate(LoginRequiredMixin, UpdateView):
     model = Story
-    fields = '__all__'
+    fields = ['name', 'description', 'story', 'photo']
 
 class StoryDelete(LoginRequiredMixin, DeleteView):
     model = Story
