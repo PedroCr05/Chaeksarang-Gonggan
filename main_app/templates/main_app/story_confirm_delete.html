@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="page-header">
+  <h1>Delete Story Card?</h1>
+</div>
+
+<h2>Are you sure you want to delete '{{ story.name }}'?</h2>
+
+<form action="" method="post" class="form">
+  {% csrf_token %}
+  <a href="{% url 'story-detail' story.id %}" class="btn secondary"
+    >Cancel Request</a
+  >
+  <button type="submit" class="btn danger">Delete Story</button>
+</form>
+
+{% endblock %}

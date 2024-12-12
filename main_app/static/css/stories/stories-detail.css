@@ -1,39 +1,70 @@
+a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
 body {
   color: #d9d9d9;
 }
 
+.sectional-titles {
+  font-size: 2.3rem;
+}
+
 .story-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  background-color: #444;
-  border: 1px solid #666;
-  padding: 10px 20px;
-  border-radius: 8px;
+  background-color: #9a9a9a;
+  border: 0.4rem solid #666;
+  padding: 0.8rem;
+  border-radius: 2rem;
   margin-bottom: 20px;
 }
 
 .story-header h1 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin: 0;
+  text-align: center;
+}
+
+.story-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .story-actions .btn {
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 2rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .story-actions .btn-edit {
-  background-color: rgba(57, 57, 57, 75);
-  border: 0.4rem solid #ffb37d;
+  background-color: #ffb37d98;
+  border: 0.3rem solid #ffb37d;
 }
 
 .story-actions .btn-delete {
-  background-color: rgba(57, 57, 57, 75);
-  border: 0.4rem solid #f50000;
+  background-color: #f500009d;
+  border: 0.3rem solid #f50000;
+}
+
+.story-actions .btn-edit:hover {
+  background-color: #ffb37d;
+  color: #333;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.story-actions .btn-delete:hover {
+  background-color: #f50000;
+  color: #fff;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .story-container {
@@ -42,35 +73,29 @@ body {
   padding: 20px;
   background-color: #9a9a9a;
   border: 0.4rem solid #505050;
-  border-radius: 8px;
+  border-radius: 2rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.story-content {
-  background-color: #9a9a9a;
-  border: 1px solid #505050;
-  border-radius: 8px;
-  padding: 20px;
 }
 
 .story-description,
 .story-text {
   background-color: #dddddd;
-  border: 1px solid #dddddd;
   padding: 15px;
-  border-radius: 6px;
-  margin-bottom: 20px;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  color: black;
 }
 
 .story-description h2,
 .story-text h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
 }
 
 .story-description p,
 .story-text p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: black;
 }

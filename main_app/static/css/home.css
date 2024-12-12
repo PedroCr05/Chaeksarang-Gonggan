@@ -4,12 +4,12 @@
 }
 
 .home-title {
-  background-color: rgba(168, 168, 168, 75);
+  background-color: rgba(168, 168, 168, 75%);
   border-radius: 0.9rem;
   font-size: 1.75rem;
   color: #d9d9d9;
   padding: 0 0.4rem 0 0.4rem;
-  box-shadow: 0 0.5rem 0 0.5rem rgba(89, 89, 89, 75);
+  box-shadow: 0 0.5rem 0 0.5rem rgba(89, 89, 89, 75%);
 }
 
 .logo-container .header-logo-container img {
