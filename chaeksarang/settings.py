@@ -46,7 +46,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'chaeksarang.wsgi.application'
+WSGI_APPLICATION = '    application'
 
 
 # Database
