@@ -11,3 +11,4 @@ requests==2.32.3
 requests-toolbelt==1.0.0
 sqlparse==0.5.2
 urllib3==2.2.3
+whitenoise==6.8.2
