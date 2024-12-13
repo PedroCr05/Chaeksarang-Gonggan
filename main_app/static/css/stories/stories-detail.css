@@ -58,7 +58,6 @@ body {
   background-color: #9a9a9a;
   border: 0.4rem solid #505050;
   border-radius: 2rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .story-description,
@@ -67,7 +66,6 @@ body {
   padding: 15px;
   border-radius: 0.8rem;
   margin-bottom: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   color: black;
 }
 
@@ -102,4 +100,7 @@ body {
   font-size: 3rem;
   margin: 0;
   text-align: center;
+}
+
+.story-cover-image {
 }

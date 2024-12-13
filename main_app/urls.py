@@ -10,5 +10,4 @@ urlpatterns = [
     path('stories/<int:pk>/update/', views.StoryUpdate.as_view(), name='story-update'),
     path('stories/<int:pk>/delete/', views.StoryDelete.as_view(), name='story-delete'),
     path('accounts/signup/', views.signup, name='signup'),
-
 ]

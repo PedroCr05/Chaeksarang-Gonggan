@@ -83,3 +83,9 @@ form textarea {
   color: #333;
   cursor: pointer;
 }
+
+.red-text {
+  font-family: inherit;
+  font-size: 2rem;
+  color: #f00;
+}
