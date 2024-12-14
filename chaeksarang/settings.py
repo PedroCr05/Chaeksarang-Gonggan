@@ -6,7 +6,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRETKEY')
+SECRET_KEY = os.getenv('SECRET_KEY')
 if not 'ON_RENDER' in os.environ:
     DEBUG = True
 
