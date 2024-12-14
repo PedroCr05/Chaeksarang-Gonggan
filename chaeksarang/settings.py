@@ -1,8 +1,14 @@
 from pathlib import Path
+from dotenv import load_dotenv
+import dj_database_url
+import os
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-hm9by00k6lxdu949m_)7x3(2$o%^%2px2+b))c-b6g001+xk5y'
+SECRET_KEY = os.getenv('SECRETKEY')
+if not 'ON_RENDER' in os.environ:
+    DEBUG = True
 
 DEBUG = True
 
@@ -53,12 +59,30 @@ WSGI_APPLICATION = '    application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'chaeksarang',
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'chaeksarang',
+
+#     }
+# }
+
+if 'ON_RENDER' in os.environ:
+    DATABASES = {
+        "default": dj_database_url.config(
+            env='DATABASE_URL',
+            conn_max_age=600,
+            conn_health_checks=True,
+            ssl_require=True,
+        ),
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'chaeksarang',
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

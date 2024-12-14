@@ -2,13 +2,16 @@ aiven-client==4.5.1
 asgiref==3.8.1
 certifi==2024.8.30
 charset-normalizer==3.4.0
+dj-database-url==2.3.0
 Django==5.1.4
 gunicorn==23.0.0
 idna==3.10
 packaging==24.2
 psycopg2-binary==2.9.10
+python-dotenv==1.0.1
 requests==2.32.3
 requests-toolbelt==1.0.0
-sqlparse==0.5.2
+sqlparse==0.5.3
+typing_extensions==4.12.2
 urllib3==2.2.3
 whitenoise==6.8.2
