@@ -60,6 +60,18 @@ body {
   border-radius: 2rem;
 }
 
+.story-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.story-cover-image {
+  max-width: 100%;
+  height: auto;
+}
+
 .story-description,
 .story-text {
   background-color: #dddddd;
